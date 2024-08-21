@@ -1,0 +1,110 @@
+.ChatWebSocet {
+  background: url("https://i.pinimg.com/736x/67/1c/3a/671c3afad406813e72171246a51e9548.jpg")
+    no-repeat center/cover;
+  // filter: blur(70px);
+  // z-index: -99;
+  h1 {
+    font-size: 25px;
+  }
+  p {
+    font-size: 25px;
+    // color: rgb(21, 19, 19);
+    // background: rgba(238, 130, 238, 0.678);
+    // border: 2 solid rgba(87, 32, 87, 0.678);
+    padding: 5px;
+    border-radius: 15px;
+  }
+  h2 {
+    text-align: center;
+    padding: 15px 0;
+    border-bottom: 2px solid rgb(180, 164, 164);
+  }
+  .content {
+    // background-image: url("https://images.pexels.com/photos/531880/pexels-photo-531880.jpeg?cs=srgb&dl=pexels-pixabay-531880.jpg&fm=jpg");
+    background: rgba(238, 130, 238, 0.388);
+    // background-repeat: no-repeat;
+    border-radius: 15px;
+    .discussion {
+      margin-top: 40px;
+      display: flex;
+      flex-direction: column;
+      gap: 20px;
+      padding: 20px;
+      overflow-y: scroll;
+      height: 80vh;
+
+      // .chatBlock {
+
+      .uuserTitle {
+        display: flex;
+        flex-direction: column;
+        align-items: start;
+        gap: 10px;
+        padding: 15px;
+        width: 80%;
+        background: rgba(238, 130, 238, 0.678);
+
+        border-radius: 30px;
+
+        .userTitle {
+          display: flex;
+          align-items: center;
+          gap: 10px;
+
+          img {
+            width: 37px;
+            height: 37px;
+            border-radius: 50%;
+          }
+        }
+      }
+      // }
+
+      .uuserSaikal {
+        display: flex;
+        flex-direction: column;
+        align-items: end;
+        gap: 10px;
+
+        .userSaikal {
+          display: flex;
+          align-items: center;
+          justify-content: end;
+          gap: 10px;
+          padding: 15px;
+          width: 100%;
+          background: rgba(238, 130, 238, 0.678);
+
+          border-radius: 30px;
+          img {
+            width: 35px;
+            border-radius: 50%;
+          }
+        }
+      }
+    }
+    .discussion::-webkit-scrollbar {
+      display: none;
+    }
+
+    .form {
+      padding: 20px 0;
+      input {
+        width: 350px;
+        background: white;
+        color: black;
+        outline: none;
+        border: none;
+        border-radius: 15px;
+        padding: 10px;
+      }
+      button {
+        padding: 10px 30px;
+        border: none;
+        background: white;
+        color: black;
+        border-radius: 15px;
+      }
+    }
+  }
+}
